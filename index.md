@@ -4,6 +4,3 @@
 
 layout: home
 ---
-
-<hr> 
-<h2 style = "text-align: center;"> Hello! This is Vibha's website! </h2>
