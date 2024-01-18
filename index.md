@@ -31,8 +31,8 @@ layout: home
 
 <h3> Trimester 2</h3>
 <ol>
-  <li>Binary Logic CPT Project - Health Tracker</li>
-  <li> CPT JWT Project - Health Tracker w/ Additional Functionality </li>
+  <li> <strong> Binary Logic CPT Project </strong> - Health Tracker</li>
+  <li> <strong> CPT JWT Project </strong> - Health Tracker w/ Additional Functionality </li>
 </ol>
 
 <h3> Trimester 1</h3>
@@ -40,9 +40,13 @@ layout: home
 
 
 <ol>
-  <li>Country Mapper Project</li>
-  <li>Small Games</li>
-  <li>Biomodeling through Flask</li>
+  <li> <strong> NATM Final Project </strong> - Country Mapper Project</li>
+  <li> <strong> Partner Project (w/ Anusha)</strong> - Small Games </li>
+  <ol> 
+  <li> Tic Tac Toe </li>
+  <li> Pictionary </li>
+  </ol>
+  <li> <strong> NATM Trial Project </strong> -  Biomodeling through Flask</li>
 </ol>
 
 </div>
