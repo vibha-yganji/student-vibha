@@ -1,8 +1,28 @@
+<style>
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid black;
+    border-radius: 15px;
+  }
+
+  li {
+    margin: 40px;
+
+  }
+
+  hr {
+    margin: 40px;
+  }
+</style>
+
+
 <header class="site-header">
 
   <div id="header">
     <nav>
-      <ul>
+      <ul class = "navbar">
         <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
         <li class="fork"><a href="{{site.baseurl}}/compsci">CompSci</a></li>
         <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
