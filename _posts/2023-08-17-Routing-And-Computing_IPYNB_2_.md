@@ -2,7 +2,7 @@
 toc: False
 comments: True
 layout: post
-title: IPYNB Table, Code
+title: Routing and Computing
 description: Team teach on routing and computing
 courses: {'compsci': {'week': 1}}
 type: hacks
