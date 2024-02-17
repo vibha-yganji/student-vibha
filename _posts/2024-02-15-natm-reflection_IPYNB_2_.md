@@ -2,9 +2,7 @@
 toc: False
 comments: True
 layout: post
-hide: True
-title: Night at the Museum (NATM) Reflection
-description: None
+title: NATM Reflection
 courses: {'compsci': {'week': 11}}
 ---
 
@@ -23,24 +21,27 @@ courses: {'compsci': {'week': 11}}
 
 ## **Other Team Reviews**
 
+I do not have any pictures as my phone was dead :(
+
 #### **Eshika, Aditi, Nupur, Avanthika's project:** 
 
 - This team's project incorporated a feature that allowed the user to input a beverage and the corresponding sugar level would be provided as an output.
-- This feature really interested me as 
+- This feature really interested me as it was very similar to the food tracker on our project buts adds a more user-based functionality and provides important information to the user. 
 
 
 #### **Ananya, Priya, Arushi, Sumedha's project:**
 - This team's project related to mental health and provided a quiz that allowed the individual to assess their mental status.
-- This project also interested mw 
+- This project also interested me as it was a unique idea that I did not see implemented in anyone else's project at NATM. 
 
 ## **Additions to CPT Project**
 
-- Based off of the 
+- Based off of the feedback that we had recieved from different audiences, some potential additions to our project are to create a profile system that allows for user to upload images and a leaderboard that uses a coin system for the various health trackers.
 
 ## **Projects Outside of CompSci**
 
 #### **Anusha's Photography**
-- I really enjoyed looking at Anusha's photography pictures
+- I really enjoyed looking at Anusha's photography pictures as the view of San Diego during the holiday season was very beautiful to see. 
 
 
-![image.png](attachment:image.png)
+
+[Image Drive Link](https://drive.google.com/file/d/1Z2jynjULxwSD55hazfZUW-nlHPXOUpOk/view?usp=sharing)
