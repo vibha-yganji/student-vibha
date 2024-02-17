@@ -10,13 +10,13 @@ courses: {'compsci': {'week': 11}}
 
 #### **Glows**
 - In our later demos, our audience really liked the food tracker and its ability to create a pie chart and measure how close an individual's diet was to the USDA recoomended daily amounts.
-- We were also given the suggestion to add additional profile picture functionality through the ability to upload profile pictures.
+- We were also given the suggestion to add additional profile picture functionality through the ability to upload profile pictures. 
 
 
 #### **Grows**
 - Our demos started out being very disorganized as our team was unsure of how to split the presentation of the features and the code for both the frontend + backend among each team member.
 - As a result, we were unable to properly present all features in the initial demos and did not receive enough feedback.
-- Some of our audience members commented on the organization of your navigation on the home page and suggested to declutter it (this can be implemented by ).
+- Some of our audience members also commented on the organization of your navigation on the home page and suggested to declutter it (this can be implemented by ).
 
 
 ## **Other Team Reviews**
