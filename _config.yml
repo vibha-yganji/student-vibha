@@ -30,7 +30,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-  html:
+html:
   comments:
     utterances:
       repo: "vibha-yganji/student-vibha"

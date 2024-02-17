@@ -1,11 +1,11 @@
 ---
 toc: False
+comments: True
 layout: post
 hide: True
 title: Night at the Museum (NATM) Reflection
 description: None
 courses: {'compsci': {'week': 11}}
-type: tangibles
 ---
 
 ## **Feedback from Demos**
