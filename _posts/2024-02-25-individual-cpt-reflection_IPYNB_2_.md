@@ -12,7 +12,7 @@ description: My reflection and write-up of both my group's CPT project and what 
 #### <strong> CPT Requirements: </strong>
 [Link to CPT Requirements](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf)
 
-<table border="1">
+<table>
   <tr>
     <th>Requirement</th>
     <th>Description</th>
@@ -80,8 +80,7 @@ description: My reflection and write-up of both my group's CPT project and what 
 
 ### **Component B: Video**
 
-**Input to your program**
-**At least one aspect of the functionality of your program**
+[Link to video](https://drive.google.com/file/d/1dd9mNGS1VfuugNmz_tCOHt6IEOTvmcrA/view)
 
 | Requirements                              | Description |
 |------------------------------------------------|--------------|
