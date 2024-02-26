@@ -7,6 +7,12 @@ courses: {'compsci': {'week': 11}}
 description: My reflection and write-up of both my group's CPT project and what I've learned over the past trimester!
 ---
 
+My group's project focuses on tracking health data through a variety of features includiing food, water, exercise, and sleep. The features I mainly contributed to was the profile page where users are able to select a profile picture. The profile_display page also offers a preview of the profile picture and the ability to update your name. It also functions as a dahsboard where users can add their height, weight, and other variables to track their health.
+
+ Here are some of my key commits over the course of my project: 
+ - [Profile Edits](https://github.com/jplip/frontTri2/commit/cb957f1c20981fca7f76833139d1cc6cfae5010e)
+ - [Addition of Dashboard Fetures](https://github.com/jplip/frontTri2/commit/6bd2945379ef06fce428c6c7fff173d9dbe44f9b)
+
 ### **Component A: Program Code**
 
 #### <strong> CPT Requirements: </strong>
@@ -24,6 +30,7 @@ description: My reflection and write-up of both my group's CPT project and what 
         <li>A variety of features on our project require user input including the login, registration, and profile pages.</li>
         <li><strong>Specific example:</strong> the profile display page takes in a user's height, weight, and other health data.</li>
         <li><a href="https://ibb.co/jRbjn2L">1st Requirement</a></li>
+         <img src="https://i.ibb.co/L5YsVWC/Screenshot-2024-02-25-at-6-03-32-PM.png">
       </ul>
     </td>
   </tr>
@@ -33,6 +40,7 @@ description: My reflection and write-up of both my group's CPT project and what 
       <ul>
         <li>The profile display/dashboard page makes use of local storage to store multiple variables including the weight, height, caloric intake, and other information about a user.</li>
         <li><a href="https://ibb.co/f9Yv12V">2nd requirement</a></li>
+        <img src="https://i.ibb.co/FXbVxKk/Screenshot-2024-02-25-at-8-22-06-PM.png">
         <li>Other pages of our project such as the login page make use of JSON which is a storage mechanism to keep track of the several variables that we use.</li>
       </ul>
     </td>
@@ -43,6 +51,8 @@ description: My reflection and write-up of both my group's CPT project and what 
       <ul>
         <li>The profile creation page requires the use of many functions such as getProfileImage, getProfileAscii (this function requires the use of a singular parameter), and getSelectedProfile to successfully allow a user to select an ASCII profile and update the website with the corresponding picture.</li>
         <li><a href="https://ibb.co/wS12Cb9">3rd requirement</a></li>
+        <img src="https://i.ibb.co/dPyH63d/Screenshot-2024-02-25-at-8-24-59-PM.png">
+        
       </ul>
     </td>
   </tr>
@@ -52,6 +62,7 @@ description: My reflection and write-up of both my group's CPT project and what 
       <ul>
         <li>The calculateBMI() function uses an if/else conditional to test for the presence of both the height and weight variables. After doing so, it <strong>selects</strong> the route where the BMI is calculated. If the weight and height variables were not provided by the user, the algorithm would select a path where it would instead inform the user to enter valid values for the required variables. This function iterates through two potential paths for the program.</li>
         <li><a href="https://ibb.co/q0DQwm8">4th requirement</a></li>
+         <img src="https://i.ibb.co/bH69nNV/Screenshot-2024-02-25-at-8-27-01-PM.png">
       </ul>
     </td>
   </tr>
@@ -61,6 +72,7 @@ description: My reflection and write-up of both my group's CPT project and what 
       <ul>
         <li>The updateProfilePicture() function is called within the profile_creation file to update the div element that offers a preview of the selected profile picture with the picture that the user has chosen.</li>
         <li><a href="https://ibb.co/Y7VSH3w">5th requirement</a></li>
+        <img src="https://i.ibb.co/4Z0Lh73/Screenshot-2024-02-25-at-8-28-41-PM.png">
       </ul>
     </td>
   </tr>
@@ -71,6 +83,7 @@ description: My reflection and write-up of both my group's CPT project and what 
         <li>After user chooses their profile picture from the set of ASCII characters, the picture appears in both the upper right corner and on the profile_creation page.</li>
         <li>After users enter their weight and height on the profile_display page, they are able to calculate their BMI.</li>
         <li><a href="https://ibb.co/mFs999m">6th requirement</a></li>
+        <img src="https://i.ibb.co/DgX999N/Screenshot-2024-02-25-at-8-30-50-PM.png">
       </ul>
     </td>
   </tr>
@@ -91,11 +104,13 @@ description: My reflection and write-up of both my group's CPT project and what 
 |**Your video must be either .webm, .mp4, .wmv, .avi, or .mov format, no more than 1 minute in length, and no more than 30MB in file size**|   .mp4 format was used, video was 57 seconds in length and 11.7 MB in size.           |
 
 
+### **Peer Review**
+
 ### <strong> Reflection </strong>
 
 The past trimester has been very instrumental in advancing my understanding of the College Board requriements and expectations for an AP CSP student as I struggled during the first trimester in understanding how to apply the code that we were shown in class. A variety of new concepts have been introduced to me this trimester as well which I list in the following section. 
 
-### Concepts/Lessons
+### **Concepts/Lessons**
 
 I have compiled a brief list of all the new concepts that I have learned a lot about during this trimester. 
 <br>
