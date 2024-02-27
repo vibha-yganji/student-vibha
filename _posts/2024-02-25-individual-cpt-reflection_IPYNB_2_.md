@@ -11,7 +11,7 @@ My group's project focuses on tracking health data through a variety of features
 
  Here are some of my key commits over the course of my project: 
  - [Profile Edits](https://github.com/jplip/frontTri2/commit/cb957f1c20981fca7f76833139d1cc6cfae5010e)
- - [Addition of Dashboard Fetures](https://github.com/jplip/frontTri2/commit/6bd2945379ef06fce428c6c7fff173d9dbe44f9b)
+ - [Addition of Dashboard Features](https://github.com/jplip/frontTri2/commit/6bd2945379ef06fce428c6c7fff173d9dbe44f9b)
 
 ### **Component A: Program Code**
 
@@ -52,16 +52,17 @@ My group's project focuses on tracking health data through a variety of features
         <li>The profile creation page requires the use of many functions such as getProfileImage, getProfileAscii (this function requires the use of a singular parameter), and getSelectedProfile to successfully allow a user to select an ASCII profile and update the website with the corresponding picture.</li>
         <li><a href="https://ibb.co/wS12Cb9">3rd requirement</a></li>
         <img src="https://i.ibb.co/dPyH63d/Screenshot-2024-02-25-at-8-24-59-PM.png">
-        
       </ul>
     </td>
-  </tr>
+  <t/tr>
   <tr>
     <td>(4) An algorithm that includes sequencing, selection, and iteration that is in the body of the selected procedure</td>
     <td>
       <ul>
+      <li> The loggedInUserName() function uses an if/else condition to test if the user is logged in. The first path that the program can take if the condition evaluates to True is to print both the username and UserID. If the conditional evaluates to False, the prgoram will take the path where the it prints a message that the user is not logged in. </li>
+      <img src=" https://i.ibb.co/6JFT3F7/Screenshot-2024-02-26-at-8-26-23-PM.png">
         <li>The calculateBMI() function uses an if/else conditional to test for the presence of both the height and weight variables. After doing so, it <strong>selects</strong> the route where the BMI is calculated. If the weight and height variables were not provided by the user, the algorithm would select a path where it would instead inform the user to enter valid values for the required variables. This function iterates through two potential paths for the program.</li>
-        <li><a href="https://ibb.co/q0DQwm8">4th requirement</a></li>
+        <li><a href="https://ibb.co/q0DQwm8">4th requirement (2nd example)</a></li>
          <img src="https://i.ibb.co/bH69nNV/Screenshot-2024-02-25-at-8-27-01-PM.png">
       </ul>
     </td>
@@ -105,6 +106,21 @@ My group's project focuses on tracking health data through a variety of features
 
 
 ### **Peer Review**
+
+Lakshanya and I peer-graded each others' articles and Lakshanya offered me the following feedback:
+
+**Overall Score:** 5/5
+This shows a good understanding of code function and components, as well as an organized presentation of the requirements. Clear description of feature was included and good reflection/lessons shows growth. Extra for submitting early.
+
+**Improvements:**
+
+- I believe the 4th requirement is supposed to demonstrate the same procedure as the one you chose before (Ascii or profile picture instead of BMI)
+- For 6th requirement, it asks for output instructions for functionality not input, so probably better suited to include fetch code/fetch explanation
+- The video captions were a bit lengthy, it might be better to space out a bit more
+
+<hr>
+
+- During our peer-review, Lakshanya also helped me fix the images on my website. 
 
 ### <strong> Reflection </strong>
 
