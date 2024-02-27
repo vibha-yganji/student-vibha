@@ -7,13 +7,6 @@ courses: {'compsci': {'week': 11}}
 description: My reflection and write-up of both my group's CPT project and what I've learned over the past trimester!
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Details</title>
-</head>
 <body>
 
 <p>My group's project focuses on tracking health data through a variety of features including food, water, exercise, and sleep. The features I mainly contributed to was the profile page where users are able to select a profile picture. The profile_display page also offers a preview of the profile picture and the ability to update your name. It also functions as a dashboard where users can add their height, weight, and other variables to track their health.</p>
@@ -24,7 +17,7 @@ description: My reflection and write-up of both my group's CPT project and what 
   <li><a href="https://github.com/jplip/frontTri2/commit/6bd2945379ef06fce428c6c7fff173d9dbe44f9b">Addition of Dashboard Features</a></li>
 </ul>
 
-<h3>Component A: Program Code</h3>
+<h3><strong>Component A: Program Code</strong></h3>
 
 <strong>CPT Requirements:</strong>
 <a href="https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf">Link to CPT Requirements</a>
@@ -101,7 +94,9 @@ description: My reflection and write-up of both my group's CPT project and what 
   </tr>
 </table>
 
-<h3>Component B: Video</h3>
+<hr>
+
+<h3><strong>Component B: Video</strong></h3>
 
 <a href="https://drive.google.com/file/d/1dd9mNGS1VfuugNmz_tCOHt6IEOTvmcrA/view">Link to video</a>
 
@@ -132,6 +127,8 @@ description: My reflection and write-up of both my group's CPT project and what 
   </tr>
 </table>
 
+<hr>
+
 <h3>Peer Review</h3>
 
 <p>Lakshanya and I peer-graded each others' articles and Lakshanya offered me the following feedback:</p>
@@ -148,7 +145,9 @@ This shows a good understanding of code function and components, as well as an o
 
 <p>During our peer-review, Lakshanya also helped me fix the images on my website.</p>
 
-<h3>Concepts/Lessons</h3>
+<hr>
+
+<h3><strong>Concepts/Lessons</strong></h3>
 
 <p>I have compiled a brief list of all the new concepts that I have learned a lot about during this trimester.</p>
 <ul>
@@ -157,5 +156,5 @@ This shows a good understanding of code function and components, as well as an o
 </ul>
 
 </body>
-</html>
+
 
