@@ -7,6 +7,9 @@ type: hacks
 courses: {'compsci': {'week': 14}}
 ---
 
+# Tri 3 Seed Individual Review 
+##### ignore above title + heading as make command error on terminal prevents me from making new ipynb files
+
 ## **Vibha Ganji**
 
 ### Individual.
