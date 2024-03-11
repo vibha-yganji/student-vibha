@@ -1,10 +1,10 @@
 ---
 comments: True
 layout: post
-title: Calculator IPYNB
-description: Grab Calculator Code and place in IPYNB
+title: Seed Invidiual Review
+description: Tri 3 Seed Review
 type: hacks
-courses: {'compsci': {'week': 2}}
+courses: {'compsci': {'week': 14}}
 ---
 
 ## **Vibha Ganji**
