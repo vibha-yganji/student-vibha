@@ -2,7 +2,6 @@
 comments: True
 layout: post
 title: Seed Invidiual Review
-description: Tri 3 Seed Review
 type: hacks
 courses: {'compsci': {'week': 14}}
 ---
