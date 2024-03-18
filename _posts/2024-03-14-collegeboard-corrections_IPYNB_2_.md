@@ -19,7 +19,13 @@ description: None
 - The correct decimal form of 11000 is 24. This can be found by doing 2^4 + 2^3 = 24.
 
 ## 12
+- C is the correct answer for this question as during each loop cycle, this code makes the robot turn left if there's an open space to its left. Then, regardless of whether it turns left or not, the code tries to make the robot move forward by one square. Initially, the robot moves forward three squares for the first three loops. Then, it turns left in the next loop. After that, it moves forward three squares for the following three loops. It repeats this pattern until it reaches the gray square at the bottom left corner of the grid, moving forward three squares in the last three loops.
 
+## 14
+- Lines 8 and 12 should be switched as true should only be returned when there is an increasing order of the elements in the list and false should be returned is there is a decreasing order of elements in the list. This is switched around in the code.
+
+## 15
+- A is the correct code segment that can be used to draw the pict
 
 ## 30
 
@@ -125,7 +131,6 @@ description: None
 ## 69
 - A and D are the correct answers.
 - A will require metadata as the images cannot tell you the exact time that the pictures were taken whereas C will also require metadata as you typically cannot identify an exact date from looking at an image unless you have a clear memory of each day. 
-
 
 ## 70
 - A is the correct answer as when substring is performed using the paramters oldStr, 1, and (n-1), left will be equivalent to all characters in OldStr to the left of index whereas right will be equivalent to all characters to the right of index n in OldStr. When both the left and right vairables are concatenated, all the characters excpet for the character in position n will be included in newStr. 

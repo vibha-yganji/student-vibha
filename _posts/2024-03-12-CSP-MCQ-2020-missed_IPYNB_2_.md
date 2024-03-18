@@ -179,9 +179,6 @@ def game_machine(insert_coin, on_button):
 game_machine(True, False)
 
 
-# 2nd answer
-
-
 ```
 
     You cannot play this game!
@@ -494,7 +491,46 @@ print(f"Algorithm 10 times took {(end - start)*1000:.2f} milliseconds")
 # as a 2nd hack, create a slow algorithm and measure its time, which are considered slow algorithms... 
 #   O(n^3) which is three nested loops 
 #   O(2^n) which is a recursive algorithm with two recursive calls
+
+
+# Slow algorithm with O(n^3) time complexity (three nested loops)
+def slow_algorithm_n3(input_list):
+    n = len(input_list)
+    result = 0
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                result += input_list[i] + input_list[j] + input_list[k]
+    return result
+
+# Slow algorithm with O(2^n) time complexity (recursive algorithm with two recursive calls)
+def slow_algorithm_2n(n):
+    if n <= 1:
+        return n
+    else:
+        return slow_algorithm_2n(n - 1) + slow_algorithm_2n(n - 2)
+
+# Testing the performance of the slow algorithms
+import time
+
+input_list = list(range(10))  # Sample input list
+## made the sample input smaller as 100,000 was taking too long to run (20 minutes)
+
+start_time = time.time()
+result_n3 = slow_algorithm_n3(input_list)
+end_time = time.time()
+print("Algorithm with O(n^3) took", round((end_time - start_time) * 1000, 2), "milliseconds")
+
+start_time = time.time()
+result_2n = slow_algorithm_2n(20)  # Adjust the input size as needed
+end_time = time.time()
+print("Algorithm with O(2^n) took", round((end_time - start_time) * 1000, 2), "milliseconds")
+
 ```
+
+    Algorithm with O(n^3) took 0.11 milliseconds
+    Algorithm with O(2^n) took 2.2 milliseconds
+
 
 ## 56. Compare execution times of tow version (1D analysis) - Kayden Le
 
@@ -560,6 +596,66 @@ idList = [1, 2, 3, 4] # Small list
 version_I(idList)
 version_II(idList)
 ```
+
+    Version I took 240.00 simulated seconds
+    Version II took 540.00 simulated seconds
+
+
+
+```python
+import time
+
+# Slow recursive approach
+def fibonacci_recursive(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+
+# Faster dynamic programming approach
+def fibonacci_dynamic(n):
+    fib = [0, 1]
+    for i in range(2, n+1):
+        fib.append(fib[i-1] + fib[i-2])
+    return fib[n]
+
+# Measure time for both approaches
+def measure_time(n):
+    start_time = time.time()
+    fibonacci_recursive(n)
+    slow_time = time.time() - start_time
+
+    start_time = time.time()
+    fibonacci_dynamic(n)
+    fast_time = time.time() - start_time
+
+    return slow_time, fast_time
+
+# Test for small and large numbers
+small_number = 5
+large_number = 10
+
+slow_time_small, fast_time_small = measure_time(small_number)
+slow_time_large, fast_time_large = measure_time(large_number)
+
+print("For small number (n={}):".format(small_number))
+print("Slow approach took {:.6f} seconds.".format(slow_time_small))
+print("Fast approach took {:.6f} seconds.".format(fast_time_small))
+
+print("\nFor large number (n={}):".format(large_number))
+print("Slow approach took {:.6f} seconds.".format(slow_time_large))
+print("Fast approach took {:.6f} seconds.".format(fast_time_large))
+
+```
+
+    For small number (n=5):
+    Slow approach took 0.000004 seconds.
+    Fast approach took 0.000005 seconds.
+    
+    For large number (n=10):
+    Slow approach took 0.000012 seconds.
+    Fast approach took 0.000002 seconds.
+
 
 ## 64. Error with multiplication using repeated addition (4C algorithms and programs) - Abdullah Khanani
 
@@ -627,6 +723,50 @@ print(multiply(-2, 5))  # Expected output: -10
 print(multiply(-2, -5))  # Expected output: 10, Actual output: 0
 ```
 
+    10
+    0
+    -10
+    0
+
+
+
+```python
+def multiply(x, y):
+    if y == 0 or x == 0:
+        return 0
+    elif y == 1:
+        return x
+    elif y == -1:
+        return -x
+    
+    sign = 1
+    if x < 0:
+        sign = -sign
+        x = -x
+    if y < 0:
+        sign = -sign
+        y = -y
+    
+    result = 0
+    for _ in range(y):
+        result += x
+    
+    return sign * result
+
+
+print(multiply(2, 5))  # Expected output: 10
+print(multiply(2, -5))  # Expected output: -10, Actual output: 0
+print(multiply(-2, 5))  # Expected output: -10
+print(multiply(-2, -5))
+
+```
+
+    10
+    -10
+    -10
+    10
+
+
 ## 65. Call to concat and substring (4B string operations) - Ameer Hussain
 
 A program contains the following procedures for string manipulation.
@@ -659,3 +799,34 @@ animal += "a"  # Concat(animal, "a")
 animal = "antelope"[4:8] + animal  # Concat(Substring("antelope", 5, 4), animal)
 print(animal)  # Outputs: lopejacka
 ```
+
+
+```python
+## popcorn hack 
+
+def concat_a():
+    animal = "antelope"[4:8]
+    animal += "a"
+    animal = "jackrabbit"[0:4] + animal
+    print(animal)
+def concat_b():
+    animal = "antelope"[4:8]
+    animal = "a"+animal
+    animal = "jackrabbit"[0:4] + animal
+    print(animal)
+def concat_c():
+    animal = "jackrabbit"[0:4]
+    animal += "a"
+    animal += "antelope"[4:8]
+    print(animal)
+
+concat_a()
+concat_b()
+concat_c()
+
+```
+
+    jacklopea
+    jackalope
+    jackalope
+
