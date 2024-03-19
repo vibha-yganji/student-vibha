@@ -605,15 +605,15 @@ version_II(idList)
 ```python
 import time
 
-# Slow recursive approach
-def fibonacci_recursive(n):
+# Slow
+def fibonacci_slow(n):
     if n <= 1:
         return n
     else:
-        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+        return fibonacci_slow(n-1) + fibonacci_slow(n-2)
 
-# Faster dynamic programming approach
-def fibonacci_dynamic(n):
+# Faster 
+def fibonacci_fast(n):
     fib = [0, 1]
     for i in range(2, n+1):
         fib.append(fib[i-1] + fib[i-2])
@@ -622,11 +622,11 @@ def fibonacci_dynamic(n):
 # Measure time for both approaches
 def measure_time(n):
     start_time = time.time()
-    fibonacci_recursive(n)
+    fibonacci_slow(n)
     slow_time = time.time() - start_time
 
     start_time = time.time()
-    fibonacci_dynamic(n)
+    fibonacci_fast(n)
     fast_time = time.time() - start_time
 
     return slow_time, fast_time
