@@ -633,7 +633,7 @@ def measure_time(n):
 
 # Test for small and large numbers
 small_number = 5
-large_number = 10
+large_number = 20
 
 slow_time_small, fast_time_small = measure_time(small_number)
 slow_time_large, fast_time_large = measure_time(large_number)
@@ -649,12 +649,12 @@ print("Fast approach took {:.6f} seconds.".format(fast_time_large))
 ```
 
     For small number (n=5):
-    Slow approach took 0.000004 seconds.
-    Fast approach took 0.000005 seconds.
+    Slow approach took 0.000003 seconds.
+    Fast approach took 0.000003 seconds.
     
-    For large number (n=10):
-    Slow approach took 0.000012 seconds.
-    Fast approach took 0.000002 seconds.
+    For large number (n=20):
+    Slow approach took 0.001068 seconds.
+    Fast approach took 0.000003 seconds.
 
 
 ## 64. Error with multiplication using repeated addition (4C algorithms and programs) - Abdullah Khanani
@@ -731,33 +731,25 @@ print(multiply(-2, -5))  # Expected output: 10, Actual output: 0
 
 
 ```python
-def multiply(x, y):
-    if y == 0 or x == 0:
-        return 0
-    elif y == 1:
-        return x
-    elif y == -1:
-        return -x
-    
-    sign = 1
-    if x < 0:
-        sign = -sign
-        x = -x
-    if y < 0:
-        sign = -sign
-        y = -y
-    
-    result = 0
-    for _ in range(y):
-        result += x
-    
-    return sign * result
 
+def multiply(x, y):
+    count = 0
+    result = 0
+    sign = 1 if (x > 0 and y > 0) or (x < 0 and y < 0) else -1
+    x = abs(x)
+    y = abs(y)
+    while count < y:
+        result += x
+        count += 1
+    if sign == -1:
+        result = -result
+    return result
 
 print(multiply(2, 5))  # Expected output: 10
 print(multiply(2, -5))  # Expected output: -10, Actual output: 0
 print(multiply(-2, 5))  # Expected output: -10
 print(multiply(-2, -5))
+print(multiply(-3, -4))
 
 ```
 
@@ -765,6 +757,7 @@ print(multiply(-2, -5))
     -10
     -10
     10
+    12
 
 
 ## 65. Call to concat and substring (4B string operations) - Ameer Hussain
