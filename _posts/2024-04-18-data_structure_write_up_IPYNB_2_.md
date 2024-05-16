@@ -1,6 +1,6 @@
 ---
 toc: True
-comments: True
+comments: False
 title: Individual Data Structures Reflection
 layout: post
 courses: {'compsci': {'week': 11}}
@@ -11,7 +11,7 @@ description: Data Structures writeup
 
  **From VSCode using SQLite3 Editor, show your unique collection/table in database, display rows and columns in the table of the SQLite database.**
 
-For this project, I have made a feature that allows the user to enter and keep track of their own personal recipes through their own database that contains the recipe name, the healthy ingredients in the recipe, the steps, and difficulty of the recipe as well. 
+For this project, I have made a feature that allows the user to enter and keep track of their own personal recipes through a database that contains the recipe name, the healthy ingredients in the recipe, the steps, and difficulty of the recipe as well. 
 
 SQLite database for recipes: 
 <img src = "https://i.ibb.co/0QR9fCh/Screenshot-2024-04-23-at-7-08-49-PM.png">
@@ -64,17 +64,15 @@ Blog Python API code and use of Postman to request and respond with JSON.
 - Below is the API code for dealing with GET and POST requests from the frontend for the recipe feature. 
 - The get() and post() functions within this code are responsible for handling the response to the frontend requests. 
 
-
-<img src = "https://i.ibb.co/FwzBB0m/Screenshot-2024-04-23-at-7-46-36-PM.png">
-<img src = "https://i.ibb.co/xfzS07F/Screenshot-2024-04-23-at-11-54-34-PM.png">
+<img src = "https://i.ibb.co/gFWMh92/Screenshot-2024-05-10-at-8-39-10-AM.png">
 
 -----
 
 *In VSCode, show algorithmic conditions used to validate data on a POST condition.*
 
-- In the following code, the length of each variable is checked.
+- In the following code, the length of each variable is checked (has to be longer than two characters).
 
-<img src = "https://i.ibb.co/fC3Zsq8/Screenshot-2024-04-23-at-7-51-53-PM.png">
+<img src = "https://i.ibb.co/s5HMmLm/Screenshot-2024-05-10-at-8-34-11-AM.png">
 
 *In Postman, show URL request and Body requirements for GET, POST, and UPDATE methods.*
 
@@ -86,7 +84,7 @@ Blog Python API code and use of Postman to request and respond with JSON.
 
 <img src = "https://i.ibb.co/fC7kDZV/Screenshot-2024-04-23-at-8-10-12-PM.png">
 
-- URL Request in Postman for PUT method
+- Example of URL Request in Postman for PUT method (I have not yet finished implementing update functionality)
 
 <img src = "https://i.ibb.co/Rhnycgg/Screenshot-2024-05-09-at-7-53-18-PM.png">
 
@@ -101,8 +99,8 @@ Blog Python API code and use of Postman to request and respond with JSON.
 
 *In Postman, show the JSON response for error for 400 when missing body on a POST request.*
 
-- 404 error on a POST request
-<img src = "https://i.ibb.co/yPYC0Db/Screenshot-2024-04-23-at-8-23-35-PM.png">
+- 400 error on a POST request
+<img src = "https://i.ibb.co/QD9q2WV/Screenshot-2024-05-10-at-7-57-55-AM.png">
 
 **In Postman, show the JSON response for error for 404 when providing an unknown user ID to a UPDATE request.**
 - Update functionality has not been implemented in my backend code
@@ -117,9 +115,11 @@ Blog JavaScript API fetch code and formatting code to display JSON.
 - JSON object response for a GET request
 
 <img src = "https://i.ibb.co/wsTVj6R/Screenshot-2024-05-09-at-7-47-25-PM.png">
+
+- depiction of the JSON response from the network tab 
 <img src = "https://i.ibb.co/80kwCM4/Screenshot-2024-05-09-at-7-48-36-PM.png">
 
-- JSON object response for a POST request
+- JSON object response for a POST request (as seen from the network tab)
 
 <img src = "https://i.ibb.co/19dVh58/Screenshot-2024-05-09-at-8-56-14-PM.png">
 
@@ -137,22 +137,37 @@ Blog JavaScript API fetch code and formatting code to display JSON.
 
 *In JavaScript code, describe fetch and method that obtained the Array of JSON objects.*
 
-A post request was sent to the backend and the data was received from the frontend.
+- A fetch request was sent to the backend and the received response can be observed in the frontend. 
+- Request was sent to http://127.0.0.1:8086/api/recipe/; when the API receives the request from the frontend, it extracts the recipes from the database and sends them to the frontend.
+
+<img src = "https://i.ibb.co/xCq7t9F/Screenshot-2024-05-09-at-10-13-47-PM.png">
 
 *In JavaScript code, show code that performs iteration and formatting of data into HTML.*
 
 - The response from the backend for the GET request is formatted as a table in the browser. 
+- Additional formatting of the recipe steps parameter is necessary to display it as a numbered list in the table. 
 
 <img src = "https://i.ibb.co/yXjtHfk/Screenshot-2024-05-09-at-8-11-29-PM.png">
 
 *In the Chrome browser, show a demo (POST or UPDATE) gathering and sending input and receiving a response that show update. Repeat this demo showing both success and failure.*
 
 - User enters their values in each of the respective fields:
+
 <img src = "https://i.ibb.co/sgSjGQx/Screenshot-2024-05-09-at-7-55-53-PM.png">
 
--  Addition of the recipe is shown to be succesful
+-  Addition of the recipe is shown to be succesful and is added to the table:
+
 <img src = "https://i.ibb.co/jfbHYHf/Screenshot-2024-05-09-at-7-57-01-PM.png">
 
+<img src = "https://i.ibb.co/BZbcrzt/Screenshot-2024-05-10-at-8-31-48-AM.png">
+
+- Addition of the recipe is shown to have been a failure (error is a result of the backend not being run):
+
+<img src = "https://i.ibb.co/S7fbMmQ/Screenshot-2024-05-10-at-8-06-26-AM.png">
+
+- Another potential error in adding a new recipe due to the values typed by the user being shorter than 2 characters:
+
+<img src = "https://i.ibb.co/k6bfTwL/Screenshot-2024-05-10-at-8-30-14-AM.png">
 
 *In JavaScript code, show and describe code that handles success. Describe how code shows success to the user in the Chrome Browser screen.*
 
@@ -169,7 +184,7 @@ A post request was sent to the backend and the data was received from the fronte
 ## Optional/Extra, Algorithm Analysis
 *In the ML projects, there is a great deal of algorithm analysis. Think about preparing data and predictions.*
 
-- Our Ml project dealt with keeping yourself healthy and invovled varrious features including a stroke and heart attack prediction.
+- Our Ml project dealt with keeping yourself healthy and invovled various features including a stroke and heart attack prediction.
 
 *Show algorithms and preparation of data for analysis. This includes cleaning, encoding, and one-hot encoding.*
 
@@ -179,7 +194,7 @@ A post request was sent to the backend and the data was received from the fronte
 
 *Show algorithms and preparation for predictions.*
 
-- A Decision Tree classifier was used to predict the probability of stroke. 
+- A Decision Tree classifier was used to predict the probability of stroke after fitting the model to my dataset. 
 
 <img src = "https://i.ibb.co/jVX2ddn/Screenshot-2024-04-24-at-7-55-27-AM.png">
 <img src = "https://i.ibb.co/qNBb6nv/Screenshot-2024-04-24-at-7-57-10-AM.png">
@@ -188,9 +203,17 @@ A post request was sent to the backend and the data was received from the fronte
 
 - Linear regression is a fundamental statistical technique used for modeling the relationship between a dependent variable and one or more independent variables. It assumes a linear relationship between the independent variables (predictors) and the dependent variable (outcome).
 
+- The following image depicts how linear regression is performed; the data points from the dataset are taken are fitted to obtain a line of best fit which can be used to make predictions about data not present in the dataset used for fitting/testing. 
+
+<img src = "https://machinelearningmastery.com/wp-content/uploads/2023/12/mlm-linreg-for-ml-new-4.png">
+
 *Discuss concepts and understanding of Decision Tree analysis algorithms.*
 
 - Decision trees operate by attmepting to recursively partition the data into subsets based on the values of input features, creating a tree-like structure where each internal node represents a decision based on a feature, each branch represents the outcome of that decision, and each leaf node represents the final decision or outcome.
+
+- The following image shows the application of the decision tree to a Titanic dataset and how it uses a tree-like mechanism to reach a decision regarding the classification of a certain data point. 
+
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Decision_Tree.jpg/220px-Decision_Tree.jpg">
 
 <img src = "https://miro.medium.com/v2/resize:fit:1400/1*WEfyLSokUB1mQMoJH2NhBw.png">
 
